@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@200;300;400;500;600;700&display=swap');
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    font-family: 'Krub', sans-serif;
+  }
+
+.item{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+}
+.item a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: teal;
+}
+
+
+    /* ///////////respionsiveness////// */
+
+@media (min-width:768px) {
+    .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
